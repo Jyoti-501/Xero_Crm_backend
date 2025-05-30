@@ -15,6 +15,11 @@ app.use(cors());
 // ✅ Middleware to parse JSON bodies
 app.use(express.json());
 
+// ✅ Welcome Route
+app.get('/', (req, res) => {
+  res.send('🎉 Backend is running successfully!');
+});
+
 // ✅ Route Mounting
 app.use('/api/auth', authRoutes);
 app.use('/api/customers', customerRoutes);
