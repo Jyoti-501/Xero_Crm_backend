@@ -3,7 +3,7 @@ const cors = require('cors');
 
 // Allow CORS from all origins (or your frontend domain for security)
 app.use(cors({
-  origin: '*',
+  origin: 'https://xero-crm-frontend-stvo.vercel.app',
   methods: ['GET', 'POST'],
 }));
 
